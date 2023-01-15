@@ -13,6 +13,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.food.riderapp.ui.RiderFoodApp
 import com.food.riderapp.ui.theme.RiderAppTheme
 
 class MainActivity : ComponentActivity() {
@@ -20,23 +21,8 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             RiderAppTheme {
-               RiderApp()
+                RiderFoodApp()
             }
         }
     }
-}
-
-@Composable
-private fun RiderApp(modifier: Modifier = Modifier) {
-    Column(modifier = modifier
-        .fillMaxSize()
-        .wrapContentSize(align = Alignment.Center)) {
-        Text(text = "Rider App", style = MaterialTheme.typography.h1)
-    }
-}
-
-@Preview(showBackground = true, showSystemUi = true)
-@Composable
-private fun RiderAppPreview() {
-    RiderApp()
 }
