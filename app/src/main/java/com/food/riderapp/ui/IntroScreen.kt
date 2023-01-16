@@ -19,7 +19,7 @@ import com.food.riderapp.R
 import com.food.riderapp.ui.theme.RiderAppTheme
 
 @Composable
-fun LoginScreen(modifier: Modifier = Modifier) {
+fun IntroScreen(modifier: Modifier = Modifier) {
     Column(modifier = modifier.background(MaterialTheme.colors.background)) {
         Card(modifier = modifier
             .weight(1f)
@@ -99,7 +99,7 @@ fun LoginScreen(modifier: Modifier = Modifier) {
 @Composable
 private fun LoginScreenLightThemePreview() {
     RiderAppTheme(darkTheme = false) {
-        LoginScreen()
+        IntroScreen()
     }
 }
 
@@ -107,6 +107,6 @@ private fun LoginScreenLightThemePreview() {
 @Composable
 private fun LoginScreenDarkThemePreview() {
     RiderAppTheme(darkTheme = true) {
-        LoginScreen()
+        IntroScreen()
     }
 }
