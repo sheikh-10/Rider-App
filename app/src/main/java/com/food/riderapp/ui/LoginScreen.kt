@@ -86,7 +86,6 @@ private fun LoginScreenLightThemePreview() {
     RiderAppTheme(darkTheme = false) {
         LoginScreen()
     }
-
 }
 
 @Preview(showBackground = true, showSystemUi = true, uiMode = UI_MODE_NIGHT_YES)
